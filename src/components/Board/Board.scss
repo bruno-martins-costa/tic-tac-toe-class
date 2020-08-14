@@ -1,0 +1,29 @@
+.board-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px;
+  flex: 1;
+  min-height: 400px;
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    width: 280px;
+    height: 280px;
+    padding: 2px;
+    background-color: #000;
+
+    &-row {
+      display: flex;
+      flex: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 32px 16px;
+  }
+}
+

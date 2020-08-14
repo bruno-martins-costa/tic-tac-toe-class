@@ -1,0 +1,33 @@
+.square {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 0;
+  background-color: #fff;
+  margin: 2px;
+  font-size: 48px;
+  font-weight: bold;
+  transition: 100ms ease-in-out;
+
+  &:hover {
+    border-color: #61DAD9;
+  }
+  
+  &.x {
+    color: #61DAD9;
+  }
+
+  &.o {
+    color: #333;
+  }
+
+  &.winner {
+    background-color: #EAFAFE;
+  }
+
+  &.endgame {
+    background-color: #FFFAE0;
+  }
+}

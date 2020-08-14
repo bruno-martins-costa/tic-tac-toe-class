@@ -1,0 +1,20 @@
+#game {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    align-items: stretch;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .container {
+      flex-direction: column;
+    }
+  }
+}
